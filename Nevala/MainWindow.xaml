@@ -246,9 +246,15 @@
         </TextBox>-->
         <TabControl Grid.Column="2" Grid.Row="2" TabStripPlacement="Bottom">
             <TabItem Header="File Explorer">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                
                     <Grid Grid.Column="2" Grid.Row="2" Grid.RowSpan="3">
-                        <!--<TreeView x:Name="FolderView" ItemsSource="{Binding Items}">
+                        <TreeView x:Name="FolderView" ItemsSource="{Binding Items}">
+                            <TreeView.Resources>
+                                <Style TargetType="{x:Type ScrollViewer}">
+                                    <Setter Property="Template" Value="{DynamicResource AppleStyleScrollBarStyle}"/>
+                                </Style>
+                            </TreeView.Resources>
+                            
                             <TreeView.DataContext>
                                 <my:DirectoryStructureViewModel/>
                             </TreeView.DataContext>
@@ -273,9 +279,9 @@
                                     </StackPanel>
                                 </HierarchicalDataTemplate>
                             </TreeView.ItemTemplate>
-                        </TreeView>-->
+                        </TreeView>
                     </Grid>
-                </ScrollViewer>
+                
             </TabItem>
             <TabItem Header="Variable Explorer">
 
