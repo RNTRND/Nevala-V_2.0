@@ -266,9 +266,9 @@
                             <TreeView.ItemTemplate>
                                 <HierarchicalDataTemplate ItemsSource="{Binding Children}">
                                     <StackPanel Orientation="Horizontal">
-                                        <Image Width="20" Margin="3" 
+                                        <!--<Image Width="20" Margin="3" 
                                             Source="{Binding Type,
-                                                Converter={x:Static my:HeaderToImageConverter.Instance}}" />
+                                                Converter={x:Static my:HeaderToImageConverter.Instance}}" />-->
                                         <TextBlock VerticalAlignment="Center" Text="{Binding Name}" >
                                         <i:Interaction.Triggers>
                                             <i:EventTrigger EventName="PreviewMouseLeftButtonDown">

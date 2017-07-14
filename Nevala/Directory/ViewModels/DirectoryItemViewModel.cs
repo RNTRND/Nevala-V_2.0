@@ -145,8 +145,16 @@ namespace Nevala
 
         private void OpenFile()
         {
-            init = new Init(Document);
-            init.OpenFile(this.FullPath);
+            if (this.Type == DirectoryItemType.Folder)
+                return;
+            else if (this.Type == DirectoryItemType.Drive)
+                return;
+            else if (this.Type == DirectoryItemType.File)
+            {
+                init = new Init(Document);
+                init.OpenFile(this.FullPath);
+            }
+
         }
     }
 }
