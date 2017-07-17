@@ -239,11 +239,11 @@
             </DockPanel>
         </DockPanel>
         <GridSplitter Grid.Column="1" Grid.Row="2" Grid.RowSpan="3" Width="5" HorizontalAlignment="Stretch"/>
-        <!--<TextBox Name="Navigator" Grid.Column="2" Grid.Row="0" Text="{Binding FullPath, Mode=TwoWay}">
+        <TextBox Name="Navigator" Grid.Column="2" Grid.Row="0" Text="{Binding FullPath, Mode=TwoWay}">
             <TextBox.DataContext>
                 <my:DirectoryItem/>
             </TextBox.DataContext>
-        </TextBox>-->
+        </TextBox>
         <TabControl Grid.Column="2" Grid.Row="2" TabStripPlacement="Bottom">
             <TabItem Header="File Explorer">
                 
@@ -288,13 +288,13 @@
             </TabItem>
         </TabControl>
         <GridSplitter Grid.Column="2" Grid.Row ="3" Height="5" HorizontalAlignment="Stretch"/>
-        <TabControl Name="tabControl"  Grid.Column="2" Grid.Row="4" TabStripPlacement="Bottom" VerticalAlignment="Stretch" >
+        <TabControl Name="tabControl"  Grid.Column="2" Grid.Row="4" TabStripPlacement="Bottom" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" >
             <TabItem Name="Python" Header="Python" >
-                <WindowsFormsHost x:Name="phost" Grid.Column="3">
+                <WindowsFormsHost x:Name="phost" Grid.Column="3" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible">
                 </WindowsFormsHost>
             </TabItem>
             <TabItem Name="IPython"  Header="IPython">
-                <WindowsFormsHost x:Name="ihost" Grid.Column="3">
+                <WindowsFormsHost x:Name="ihost" Grid.Column="3" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible">
                 </WindowsFormsHost>
             </TabItem>
         </TabControl>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows;
 using System.Windows.Input;
 
 namespace Nevala
@@ -82,6 +83,7 @@ namespace Nevala
         /// Open on Click
         /// </summary>
         public ICommand OpenOnClick { get; set; }
+        public int ClickCount { get; internal set; }
         #endregion
 
         #region Constructors
@@ -151,10 +153,25 @@ namespace Nevala
                 return;
             else if (this.Type == DirectoryItemType.File)
             {
+                //MouseButtonEventArgs e;
+
+                //if (e.ChangedButton == MouseButton.Left)
+                //{
+                    init = new Init(Document);
+                    init.OpenFile(this.FullPath);
+                //}
+            }
+
+        }
+
+        private void OnMouseDownClickCount(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ClickCount == 2)
+            {
+                // Double Click occurred.
                 init = new Init(Document);
                 init.OpenFile(this.FullPath);
             }
-
         }
     }
 }
