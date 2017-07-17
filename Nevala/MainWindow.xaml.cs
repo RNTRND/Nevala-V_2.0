@@ -35,5 +35,17 @@ namespace Nevala
             ipythonConsole.Show();
             #endregion
         }
+      private void OpenOnDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ClickCount == 2)
+            {
+                e.Handled = true;
+                var treeViewItem = sender as TreeViewItem;
+               // MessageBox.Show(treeViewItem.Header.ToString());
+            }
+        }
+
+
+
     }
 }
