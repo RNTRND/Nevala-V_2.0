@@ -105,6 +105,7 @@ namespace Nevala
                     return;
                 }
             }
+           
             // Close as normal
         }
 

@@ -30,7 +30,6 @@ namespace Nevala
             ipythonConsole.TopLevel = false;
             ipythonConsole.Width = 550;
             ipythonConsole.Height = 400;
-            
             System.Windows.Forms.Panel ipyPanel = new System.Windows.Forms.Panel();
             ihost.Child = ipyPanel;
             ipyPanel.Controls.Add(ipythonConsole);
@@ -38,17 +37,7 @@ namespace Nevala
             ipythonConsole.Show();
             #endregion
         }
-      private void OpenOnDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            if (e.ClickCount == 2)
-            {
-                e.Handled = true;
-                var treeViewItem = sender as TreeViewItem;
-               // MessageBox.Show(treeViewItem.Header.ToString());
-            }
-        }
 
-
-
+       
     }
 }

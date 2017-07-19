@@ -69,7 +69,7 @@ namespace Nevala
         #region Open
         private void OpenFile()
         {
-            
+            init = new Init(Document);
             init.OpenFile();
         }
         #endregion //Open
@@ -102,7 +102,7 @@ namespace Nevala
         private void CloseFile()
         {
             OnClose(Document.ActiveDocument);
-            if (((MainWindow)System.Windows.Application.Current.MainWindow).documentsRoot.Children.Count() == 1)
+            if (((MainWindow)System.Windows.Application.Current.MainWindow).documentsRoot.Children.Count() == 0)
                 NewFile();
         }
         #endregion //Close
@@ -121,9 +121,7 @@ namespace Nevala
         private bool OnClose(DocumentForm doc)
         {
             CancelEventArgs e = new CancelEventArgs();
-         
-           
-             if (doc.Scintilla.Modified)
+            if (doc.Scintilla.Modified)
             {
                 // Prompt if not saved
                 string message = String.Format(CultureInfo.CurrentCulture, "The Text in the {0} file has changed.{1}{2}Do you want to save the changes?", ((MainWindow)System.Windows.Application.Current.MainWindow).Title.TrimEnd(' ', '*'), Environment.NewLine, Environment.NewLine);
@@ -142,11 +140,15 @@ namespace Nevala
                     e.Cancel = !doc.Save();
                     return true;
                 }
-                else if(dr == MessageBoxResult.Cancel)
+                else if (dr == MessageBoxResult.Cancel)
                 { return false; }
             }
-            
-            ((MainWindow)System.Windows.Application.Current.MainWindow).documentsRoot.Children.Remove(doc);
+            else
+            {
+                e.Cancel = true;
+                ((MainWindow)System.Windows.Application.Current.MainWindow).documentsRoot.Children.Remove(doc);
+                return true;
+            }
             return true;
         }
         #endregion //On Close
@@ -170,6 +172,7 @@ namespace Nevala
         }
 
         #endregion //Print
+
 
         #region Exit
         private void ExitApplication()

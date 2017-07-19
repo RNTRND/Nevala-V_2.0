@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
 using System.Drawing;
+using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace Nevala
 {
@@ -20,11 +22,7 @@ namespace Nevala
         #region Fields
 
         private const string NEW_DOCUMENT_TEXT = "Untitled";
-<<<<<<< HEAD
-        private const int LINE_NUMBERS_MARGIN_WIDTH = 50; // TODO - don't hardcode this
-=======
-        private const int LINE_NUMBERS_MARGIN_WIDTH = 40; // TODO - don't hardcode this
->>>>>>> 5e1d71cb75e88f710dc10648d41f8d2715888b43
+        private const int LINE_NUMBERS_MARGIN_WIDTH = 30; // TODO - don't hardcode this
 
         /// <summary>
         /// the background color of the text area
@@ -268,7 +266,10 @@ namespace Nevala
                     OpenFile(filePath);
             }
         }
-        
+
+
+
+
         public DocumentForm OpenFile(string filePath)
         {
             DocumentForm doc = new DocumentForm();
@@ -282,10 +283,11 @@ namespace Nevala
             doc.DockAsDocument();
             doc.IsActive = true;
             //incrementalSearcher.Scintilla = doc.Scintilla;
-
             return doc;
+
+
         }
-    
+
         private void SetScintillaToCurrentOptions(DocumentForm doc)
         {
             ScintillaWPF ScintillaNet = doc.Scintilla;
@@ -528,6 +530,14 @@ namespace Nevala
             UpdateAllScintillaZoom();
         }
         #endregion
-        #endregion Methods
-    }
+
+
+        public void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //((MainWindow)System.Windows.Application.Current.MainWindow).Navigator.Text;
+            OpenFile(((MainWindow)System.Windows.Application.Current.MainWindow).Navigator.Text);
+
+        }
+            #endregion Methods
+        }
 }
