@@ -182,6 +182,8 @@ D:\Documents\Projects\Rabbit and Tortoise\Nevala current\Nevala_V1.0-master\Neva
 D:\Documents\Projects\Rabbit and Tortoise\Nevala current\Nevala_V1.0-master\Nevala_V1.0-master\Nevala\obj\Debug\Nevala.exe
 D:\Documents\Projects\Rabbit and Tortoise\Nevala current\Nevala_V1.0-master\Nevala_V1.0-master\Nevala\obj\Debug\Nevala.pdb
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Nevala.exe.config
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Nevala.exe.manifest
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Nevala.application
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Nevala.exe
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Nevala.pdb
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Apex.dll
@@ -190,6 +192,7 @@ D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\ConsoleControlSample.exe
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Microsoft.Expression.Interactions.dll
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\ProcessInterface.dll
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\PropertyChanged.dll
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\ScintillaNET.dll
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\System.Windows.Interactivity.dll
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\ConsoleControlSample.pdb
@@ -197,8 +200,10 @@ D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\ConsoleControl.WPF.pdb
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Microsoft.Expression.Interactions.xml
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\ProcessInterface.pdb
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\PropertyChanged.xml
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\ScintillaNET.xml
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\System.Windows.Interactivity.xml
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.csprojResolveAssemblyReference.cache
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\OpenFileDialog.baml
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\SaveFileDialog.baml
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\DocumentForm.g.cs
@@ -214,10 +219,7 @@ D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.g.resources
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.Properties.Resources.resources
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.csproj.GenerateResource.Cache
-D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.exe
-D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.pdb
-D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.csprojResolveAssemblyReference.cache
-D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Nevala.exe.manifest
-D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Nevala.application
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.exe.manifest
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.application
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.exe
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.pdb
