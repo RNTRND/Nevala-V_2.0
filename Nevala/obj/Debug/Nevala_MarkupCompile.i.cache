@@ -12,9 +12,14 @@ DEBUG;TRACE
 C:\Users\harsh\Desktop\Nevala-V_2.0\Nevala\App.xaml
 4-1235970330
 
+<<<<<<< HEAD
 2852347566
 772023087952
+=======
+281302647395
+781510278870
+>>>>>>> ad99967780b31874406b75bfc2dead0ca5dbaf81
 DocumentForm.xaml;MainWindow.xaml;OpenFileDialog.xaml;SaveFileDialog.xaml;
 
-True
+False
 

@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nevala", "Nevala\Nevala.csproj", "{6E3B2DC5-D9BB-4EEC-BD3B-8A4CFD496AAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleControlSample", "C:\Users\Chinmay\Desktop\ConsoleControlSource\ConsoleControlSource\ConsoleControl\ConsoleControlSample\ConsoleControlSample.csproj", "{85D51BC3-E7F2-4C63-80B4-D16BE768707E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleControlSample", "ConsoleControlSample\ConsoleControlSample.csproj", "{85D51BC3-E7F2-4C63-80B4-D16BE768707E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

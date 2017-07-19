@@ -5,3 +5,4 @@ C:\Users\harsh\Desktop\Nevala-V_2.0\Nevala\obj\Release\SaveFileDialog.g.cs
 C:\Users\harsh\Desktop\Nevala-V_2.0\Nevala\obj\Release\App.g.cs
 C:\Users\harsh\Desktop\Nevala-V_2.0\Nevala\obj\Release\GeneratedInternalTypeHelper.g.cs
 C:\Users\harsh\Desktop\Nevala-V_2.0\Nevala\obj\Release\Nevala_MarkupCompile.cache
+C:\Users\harsh\Desktop\Nevala-V_2.0\Nevala\obj\Release\Nevala.csprojResolveAssemblyReference.cache

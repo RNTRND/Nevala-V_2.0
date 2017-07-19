@@ -182,8 +182,6 @@ D:\Documents\Projects\Rabbit and Tortoise\Nevala current\Nevala_V1.0-master\Neva
 D:\Documents\Projects\Rabbit and Tortoise\Nevala current\Nevala_V1.0-master\Nevala_V1.0-master\Nevala\obj\Debug\Nevala.exe
 D:\Documents\Projects\Rabbit and Tortoise\Nevala current\Nevala_V1.0-master\Nevala_V1.0-master\Nevala\obj\Debug\Nevala.pdb
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Nevala.exe.config
-D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.exe
-D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.pdb
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Nevala.exe
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Nevala.pdb
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Apex.dll
@@ -201,7 +199,6 @@ D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\ProcessInterface.pdb
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\ScintillaNET.xml
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\System.Windows.Interactivity.xml
-D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.csprojResolveAssemblyReference.cache
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\OpenFileDialog.baml
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\SaveFileDialog.baml
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\DocumentForm.g.cs
@@ -217,6 +214,7 @@ D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.g.resources
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.Properties.Resources.resources
 D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\harsh\Desktop\Nevala-V_2.0\Nevala\obj\Debug\Nevala.csprojResolveAssemblyReference.cache
 C:\Users\harsh\Desktop\Nevala-V_2.0\Nevala\obj\Debug\OpenFileDialog.baml
 C:\Users\harsh\Desktop\Nevala-V_2.0\Nevala\obj\Debug\SaveFileDialog.baml
@@ -230,3 +228,12 @@ C:\Users\harsh\Desktop\Nevala-V_2.0\Nevala\obj\Debug\Nevala_MarkupCompile.cache
 C:\Users\harsh\Desktop\Nevala-V_2.0\Nevala\obj\Debug\Nevala_MarkupCompile.lref
 C:\Users\harsh\Desktop\Nevala-V_2.0\Nevala\obj\Debug\Nevala.exe
 C:\Users\harsh\Desktop\Nevala-V_2.0\Nevala\obj\Debug\Nevala.pdb
+=======
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.exe
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.pdb
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.csprojResolveAssemblyReference.cache
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Nevala.exe.manifest
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\Nevala.application
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.exe.manifest
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\obj\Debug\Nevala.application
+>>>>>>> ad99967780b31874406b75bfc2dead0ca5dbaf81
