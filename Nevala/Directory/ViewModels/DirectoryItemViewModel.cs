@@ -152,15 +152,22 @@ namespace Nevala
             this.Children = new ObservableCollection<DirectoryItemViewModel>(
                                 children.Select(content => new DirectoryItemViewModel(content.FullPath, content.Type)));
         }
-
-        private void OpenFile()
-        {
-            if (this.Type == DirectoryItemType.Folder)
-                return;
-            else if (this.Type == DirectoryItemType.Drive)
-                return;
-            else if (this.Type == DirectoryItemType.File)
+      
+            
+            void OpenFile()
             {
+<<<<<<< HEAD
+                if (this.Type == DirectoryItemType.Folder)
+                    return;
+                else if (this.Type == DirectoryItemType.Drive)
+                    return;
+                else if (this.Type == DirectoryItemType.File)
+                {
+                    init = new Init(Document);
+                    init.OpenFile(this.FullPath);
+                }
+
+=======
                 //MouseButtonEventArgs e;
 
                 //if (e.ChangedButton == MouseButton.Left)
@@ -195,6 +202,7 @@ namespace Nevala
                 // Double Click occurred.
                 init = new Init(Document);
                 init.OpenFile(this.FullPath);
+>>>>>>> ad99967780b31874406b75bfc2dead0ca5dbaf81
             }
         }
     }

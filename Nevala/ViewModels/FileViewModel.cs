@@ -102,7 +102,7 @@ namespace Nevala
         private void CloseFile()
         {
             OnClose(Document.ActiveDocument);
-            if (((MainWindow)System.Windows.Application.Current.MainWindow).documentsRoot.Children.Count() == 0)
+            if (((MainWindow)System.Windows.Application.Current.MainWindow).documentsRoot.Children.Count() == 1)
                 NewFile();
         }
         #endregion //Close
@@ -121,7 +121,9 @@ namespace Nevala
         private bool OnClose(DocumentForm doc)
         {
             CancelEventArgs e = new CancelEventArgs();
-            if (doc.Scintilla.Modified)
+         
+           
+             if (doc.Scintilla.Modified)
             {
                 // Prompt if not saved
                 string message = String.Format(CultureInfo.CurrentCulture, "The Text in the {0} file has changed.{1}{2}Do you want to save the changes?", ((MainWindow)System.Windows.Application.Current.MainWindow).Title.TrimEnd(' ', '*'), Environment.NewLine, Environment.NewLine);
@@ -143,6 +145,7 @@ namespace Nevala
                 else if(dr == MessageBoxResult.Cancel)
                 { return false; }
             }
+            
             ((MainWindow)System.Windows.Application.Current.MainWindow).documentsRoot.Children.Remove(doc);
             return true;
         }
