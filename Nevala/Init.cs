@@ -140,11 +140,6 @@ namespace Nevala
             ScintillaNet.AutomaticFold = (AutomaticFold.Show | AutomaticFold.Click | AutomaticFold.Change);
         }
 
-        internal void OpenFile(object v)
-        {
-            throw new NotImplementedException();
-        }
-
         private void InitColors(ScintillaWPF ScintillaNet)
         {
             ScintillaNet.CaretForeColor = Colors.Black;

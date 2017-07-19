@@ -69,9 +69,8 @@ namespace Nevala
         #region Open
         private void OpenFile()
         {
-
-            object filePath = null;
-            init.OpenFile(filePath);
+            init = new Init(Document);
+            init.OpenFile();
         }
         #endregion //Open
         

@@ -260,3 +260,5 @@ C:\Users\harsh\Downloads\Nevala-V_2.0-master\Nevala-V_2.0-master\Nevala\obj\Debu
 C:\Users\harsh\Downloads\Nevala-V_2.0-master\Nevala-V_2.0-master\Nevala\obj\Debug\Nevala.pdb
 C:\Users\harsh\Downloads\Nevala-V_2.0-master\Nevala-V_2.0-master\Nevala\bin\Debug\PropertyChanged.dll
 C:\Users\harsh\Downloads\Nevala-V_2.0-master\Nevala-V_2.0-master\Nevala\bin\Debug\PropertyChanged.xml
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\PropertyChanged.dll
+D:\Documents\Projects\Rabbit and Tortoise\GitHub\Nevala 2.0\Nevala-V_2.0\Nevala\bin\Debug\PropertyChanged.xml
