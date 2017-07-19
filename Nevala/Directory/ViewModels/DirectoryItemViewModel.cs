@@ -79,6 +79,7 @@ namespace Nevala
         /// The command to expand this item
         /// </summary>
         public ICommand ExpandCommand { get; set; }
+        public ICommand ExpandDirCommand { get; set; }
         /// <summary>
         /// Open on Click
         /// </summary>
@@ -97,6 +98,7 @@ namespace Nevala
         {
             // Create commands
             this.ExpandCommand = new RelayCommand(Expand);
+            
             this.OpenOnClick = new RelayCommand(OpenFile);
             // Set path and type
             this.FullPath = fullPath;
@@ -109,6 +111,12 @@ namespace Nevala
         public DirectoryItemViewModel(Document document)
         {
             Document = document;
+        }
+
+        public DirectoryItemViewModel()
+        {
+            this.ExpandDirCommand = new RelayCommand(ExpandDir);
+
         }
 
         #endregion
@@ -168,6 +176,22 @@ namespace Nevala
                     init.OpenFile(this.FullPath);
                 //}
             }
+
+        }
+
+        private void ExpandDir()
+        {
+            
+            FullPath = ((MainWindow)System.Windows.Application.Current.MainWindow).Navigator.Text;
+            MessageBox.Show(FullPath);
+
+
+            //MessageBox.Show(((MainWindow)System.Windows.Application.Current.MainWindow).FolderView.);
+            //if (((MainWindow)System.Windows.Application.Current.MainWindow).FolderView == FullPath)
+            //{
+            //    ((MainWindow)System.Windows.Application.Current.MainWindow).FolderView.BringIntoView();
+            //}
+
 
         }
 

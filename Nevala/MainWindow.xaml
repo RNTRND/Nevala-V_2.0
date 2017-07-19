@@ -10,7 +10,7 @@
         xmlns:apexConverters="clr-namespace:Apex.Converters;assembly=Apex"
         xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
         xmlns:consoleControlSample="clr-namespace:ConsoleControlSample;assembly=ConsoleControlSample"
-        Title="MainWindow" Height="350" Width="558">
+        Title="MainWindow" WindowState="Maximized">
     <Window.DataContext>
         <viewmodels:MainViewModel/>
     </Window.DataContext>
@@ -149,6 +149,7 @@
         <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="3">
             <ToolBarPanel Name="toolStrip" HorizontalAlignment="Stretch" DockPanel.Dock="Top">
                 <ToolBarTray Grid.Row="1" Grid.ColumnSpan="3">
+                    
                     <ToolBar Height="25px" ToolBarTray.IsLocked="True">
                         <Button Width="23px" Height="22px" Padding="0px"
                                 ToolTip="New File (Ctrl+N)" Command="{Binding File.NewCommand}">
@@ -206,6 +207,11 @@
                                 <Image Height="16px" Source="/Nevala;component/Images/ImageEditRedo.png" Stretch="Uniform" />
                             </StackPanel>
                         </Button>
+                        <Button Width="23px" Height="22px" Grid.Row="1" Command="{Binding ExpandDirCommand}">
+                            <Button.DataContext>
+                                <my:DirectoryItemViewModel/>
+                            </Button.DataContext>
+                        </Button>
                         <!--<TextBox Text="{Binding FullPath}" Margin="0,0,0,0.2" Width="217">
                             <TextBox.DataContext>
                                 <my:DirectoryItem/>
@@ -240,15 +246,20 @@
             </DockPanel>
         </DockPanel>
         <GridSplitter Grid.Column="1" Grid.Row="2" Grid.RowSpan="3" Width="5" HorizontalAlignment="Stretch"/>
-        <TextBox Name="Navigator" Grid.Column="2" Grid.Row="0" Text="{Binding FullPath, Mode=TwoWay}">
+        <TextBox Name="Navigator" Grid.Column="2" Grid.Row="0" Text="{Binding ExpandDir, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" >
+            <TextBox.InputBindings>
+                <KeyBinding Key="Return" Command="{Binding ExpandDirCommand}"/>
+            </TextBox.InputBindings>
             <TextBox.DataContext>
-                <my:DirectoryItem/>
+                <my:DirectoryItemViewModel/>
             </TextBox.DataContext>
         </TextBox>
+        
         <TabControl Grid.Column="2" Grid.Row="2" TabStripPlacement="Bottom">
             <TabItem Header="File Explorer">
                 
                     <Grid Grid.Column="2" Grid.Row="2" Grid.RowSpan="3">
+<<<<<<< HEAD
                     
                     <TreeView x:Name="FolderView" ItemsSource="{Binding Items}">
                         
@@ -259,6 +270,15 @@
                             </TreeView.Resources>
                             
                             <TreeView.DataContext>
+=======
+                        <TreeView x:Name="FolderView" ItemsSource="{Binding Items}">
+                        <TreeView.Resources>
+                            <Style TargetType="{x:Type ScrollViewer}">
+                                <Setter Property="Template" Value="{DynamicResource AppleStyleScrollBarStyle}"/>
+                            </Style>
+                        </TreeView.Resources>
+                        <TreeView.DataContext>
+>>>>>>> 5e1d71cb75e88f710dc10648d41f8d2715888b43
                                 <my:DirectoryStructureViewModel/>
                             </TreeView.DataContext>
 						
@@ -276,9 +296,6 @@
                                   
                                    
                                     <StackPanel Orientation="Horizontal">
-                                        <!--<Image Width="20" Margin="3" 
-                                            Source="{Binding Type,
-                                                Converter={x:Static my:HeaderToImageConverter.Instance}}" />-->
                                         <TextBlock VerticalAlignment="Center" Text="{Binding Name}" >
                                             
                                         <i:Interaction.Triggers>

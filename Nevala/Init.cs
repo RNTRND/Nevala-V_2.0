@@ -20,7 +20,11 @@ namespace Nevala
         #region Fields
 
         private const string NEW_DOCUMENT_TEXT = "Untitled";
+<<<<<<< HEAD
         private const int LINE_NUMBERS_MARGIN_WIDTH = 50; // TODO - don't hardcode this
+=======
+        private const int LINE_NUMBERS_MARGIN_WIDTH = 40; // TODO - don't hardcode this
+>>>>>>> 5e1d71cb75e88f710dc10648d41f8d2715888b43
 
         /// <summary>
         /// the background color of the text area
