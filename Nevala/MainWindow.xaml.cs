@@ -28,8 +28,6 @@ namespace Nevala
             #region IPython Shell
             ConsoleControlSample.FormConsoleControlSample ipythonConsole = new ConsoleControlSample.FormConsoleControlSample("ipython",null);
             ipythonConsole.TopLevel = false;
-            ipythonConsole.Width = 550;
-            ipythonConsole.Height = 400;
             System.Windows.Forms.Panel ipyPanel = new System.Windows.Forms.Panel();
             ihost.Child = ipyPanel;
             ipyPanel.Controls.Add(ipythonConsole);
