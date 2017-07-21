@@ -86,7 +86,7 @@ namespace Nevala
 
         private void DocumentForm_Closing(object sender, CancelEventArgs e)
         {
-            if (Scintilla.Modified)
+            if (scintilla.Modified)
             {
                 // Prompt if not saved
                 string message = String.Format(CultureInfo.CurrentCulture, "The _text in the {0} file has changed.{1}{2}Do you want to save the changes?", Title.TrimEnd(' ', '*'), Environment.NewLine, Environment.NewLine);

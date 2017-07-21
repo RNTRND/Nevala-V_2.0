@@ -205,11 +205,6 @@
                                 <Image Height="16px" Source="/Nevala;component/Images/ImageEditRedo.png" Stretch="Uniform" />
                             </StackPanel>
                         </Button>
-                        <!--<TextBox Text="{Binding FullPath}" Margin="0,0,0,0.2" Width="217">
-                            <TextBox.DataContext>
-                                <my:DirectoryItem/>
-                            </TextBox.DataContext>
-                        </TextBox>-->
                     </ToolBar>
                 </ToolBarTray>
             </ToolBarPanel>
@@ -217,10 +212,6 @@
 
         <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="2"  Grid.RowSpan="3" Grid.ColumnSpan="1">
             <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" DockPanel.Dock="Bottom">
-                <!--<StatusBar Name="statusStrip" Height="22px" HorizontalAlignment="Stretch"
-                           DockPanel.Dock="Bottom">
-                    <StatusBarItem />
-                </StatusBar>-->
                 <ad:DockingManager Name="dockPanel" Grid.Row="3" Grid.Column="0">
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="ActiveContentChanged">
@@ -240,10 +231,6 @@
         </DockPanel>
         <GridSplitter Grid.Column="1" Grid.Row="2" Grid.RowSpan="3" Width="5" HorizontalAlignment="Stretch"/>
         <TextBox Name="Navigator" Grid.Column="2" Grid.Row="1" Text="{Binding FullPath, Mode=TwoWay}" Margin="0,2,2,1" >
-            <TextBox.InputBindings>
-                <KeyBinding Command="{Binding SomeCommand}" Key="Return" />
-                <KeyBinding Command="{Binding SomeCommand}" Key="Enter" />
-            </TextBox.InputBindings>
             <TextBox.DataContext>
                 <my:DirectoryItem/>
             </TextBox.DataContext>
@@ -269,31 +256,20 @@
                         <TreeView.ItemContainerStyle>
                             <Style TargetType="{x:Type TreeViewItem}">
                                 <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
-                                <!--<EventSetter Event="MouseDoubleClick" Handler="OnItemMouseDoubleClick" />-->
                             </Style>
                         </TreeView.ItemContainerStyle>
 
                         <TreeView.ItemTemplate>
                             <HierarchicalDataTemplate ItemsSource="{Binding Children}">
-                               
-                                
-                                    <StackPanel Orientation="Horizontal">
-                                    <!--<Image Width="20" Margin="3" 
-                                            Source="{Binding Type,
-                                                Converter={x:Static my:HeaderToImageConverter.Instance}}" />-->
+                                <StackPanel Orientation="Horizontal">
                                     <TextBlock VerticalAlignment="Center" Text="{Binding Name}" >
-                                        <i:Interaction.Triggers>
-                                            <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
-                                                <i:InvokeCommandAction Command="{Binding Path=OpenOnClick, Mode=TwoWay}"/>
-                                                <!--<EventSetter Event="MouseDoubleClick" Handler="OnItemMouseDoubleClick" />-->
-                                             </i:EventTrigger>
-                                         </i:Interaction.Triggers>
-
+                                        <TextBlock.InputBindings>
+                                            <MouseBinding MouseAction="LeftDoubleClick" Command="{Binding OpenOnClick}" />
+                                        </TextBlock.InputBindings>
                                     </TextBlock>
                                 </StackPanel>
                             </HierarchicalDataTemplate>
                         </TreeView.ItemTemplate>
-                        
                     </TreeView>
                 </Grid>
 
