@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ConsoleControlSample.exe" size="56832">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ConsoleControlSample.exe" size="57344">
       <assemblyIdentity name="ConsoleControlSample" version="1.0.1.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EOp+gD+Nne8W554Lhj9KC6HjTU1DOasU2wQGrMzCir8=</dsig:DigestValue>
+        <dsig:DigestValue>vhuK/Td+KgJiUoPlSWg1lLMDgJ9e11iFQdl7CHadikc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -102,14 +102,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nevala.exe" size="260008">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nevala.exe" size="258984">
       <assemblyIdentity name="Nevala" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8QhnAi38KBLAnRe0nPgqZRshGQ286Nlcp4R5UAqmPrs=</dsig:DigestValue>
+        <dsig:DigestValue>R45z2p/NS5pGC4rbTUjFkxrQqhkMX6CSPnNH6H0CjaM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
