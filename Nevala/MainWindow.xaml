@@ -211,7 +211,7 @@
         </DockPanel>
 
         <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="2"  Grid.RowSpan="3" Grid.ColumnSpan="1">
-            <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" DockPanel.Dock="Bottom">
+            <DockPanel Name="Textarea" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" DockPanel.Dock="Bottom">
                 <ad:DockingManager Name="dockPanel" Grid.Row="3" Grid.Column="0">
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="ActiveContentChanged">

@@ -437,6 +437,14 @@ namespace Nevala {
         #line hidden
         
         
+        #line 214 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.DockPanel Textarea;
+        
+        #line default
+        #line hidden
+        
+        
         #line 215 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal Xceed.Wpf.AvalonDock.DockingManager dockPanel;
@@ -690,30 +698,33 @@ namespace Nevala {
             this.toolStrip = ((System.Windows.Controls.Primitives.ToolBarPanel)(target));
             return;
             case 49:
-            this.dockPanel = ((Xceed.Wpf.AvalonDock.DockingManager)(target));
+            this.Textarea = ((System.Windows.Controls.DockPanel)(target));
             return;
             case 50:
-            this.documentsRoot = ((Xceed.Wpf.AvalonDock.Layout.LayoutDocumentPane)(target));
+            this.dockPanel = ((Xceed.Wpf.AvalonDock.DockingManager)(target));
             return;
             case 51:
-            this.Navigator = ((System.Windows.Controls.TextBox)(target));
+            this.documentsRoot = ((Xceed.Wpf.AvalonDock.Layout.LayoutDocumentPane)(target));
             return;
             case 52:
-            this.FolderView = ((System.Windows.Controls.TreeView)(target));
+            this.Navigator = ((System.Windows.Controls.TextBox)(target));
             return;
             case 53:
-            this.tabControl = ((System.Windows.Controls.TabControl)(target));
+            this.FolderView = ((System.Windows.Controls.TreeView)(target));
             return;
             case 54:
-            this.Python = ((System.Windows.Controls.TabItem)(target));
+            this.tabControl = ((System.Windows.Controls.TabControl)(target));
             return;
             case 55:
-            this.phost = ((System.Windows.Forms.Integration.WindowsFormsHost)(target));
+            this.Python = ((System.Windows.Controls.TabItem)(target));
             return;
             case 56:
-            this.IPython = ((System.Windows.Controls.TabItem)(target));
+            this.phost = ((System.Windows.Forms.Integration.WindowsFormsHost)(target));
             return;
             case 57:
+            this.IPython = ((System.Windows.Controls.TabItem)(target));
+            return;
+            case 58:
             this.ihost = ((System.Windows.Forms.Integration.WindowsFormsHost)(target));
             return;
             }
