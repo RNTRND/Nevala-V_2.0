@@ -102,14 +102,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nevala.exe" size="259496">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nevala.exe" size="260008">
       <assemblyIdentity name="Nevala" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2IEVEcvLI3YRoBaz8jLccb0w0+N6OzqZ/F7vPa/hHLQ=</dsig:DigestValue>
+        <dsig:DigestValue>8QhnAi38KBLAnRe0nPgqZRshGQ286Nlcp4R5UAqmPrs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
