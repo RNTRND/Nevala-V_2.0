@@ -151,8 +151,6 @@ namespace Nevala
             var children = DirectoryStructure.GetDirectoryContents(this.FullPath);
             this.Children = new ObservableCollection<DirectoryItemViewModel>(
                                 children.Select(content => new DirectoryItemViewModel(content.FullPath, content.Type)));
-
-
         }
 
         private void ExpandDir()
@@ -160,10 +158,12 @@ namespace Nevala
             string navPath = ((MainWindow)System.Windows.Application.Current.MainWindow).Navigator.Text;
             MessageBox.Show(navPath);
 
+
             // Find all children
             var children = DirectoryStructure.GetDirectoryContents(navPath);
+
             this.Children = new ObservableCollection<DirectoryItemViewModel>(
-                                children.Select(content => new DirectoryItemViewModel(content.FullPath, content.Type)));
+                                children.Select(content => new DirectoryItemViewModel(navPath, DirectoryItemType.Folder)));
         }
 
         private void OpenFile()
