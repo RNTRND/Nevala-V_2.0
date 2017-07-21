@@ -1,0 +1,5 @@
+C:\Users\harsh\Desktop\Nevala-V_2.0\ConsoleControlSample\obj\Release\ConsoleControlSample.csprojResolveAssemblyReference.cache
+C:\Users\harsh\Desktop\Nevala-V_2.0\ConsoleControlSample\obj\Release\ConsoleControlSample.FormConsoleControlSample.resources
+C:\Users\harsh\Desktop\Nevala-V_2.0\ConsoleControlSample\obj\Release\ConsoleControlSample.FormNewProcess.resources
+C:\Users\harsh\Desktop\Nevala-V_2.0\ConsoleControlSample\obj\Release\ConsoleControlSample.Properties.Resources.resources
+C:\Users\harsh\Desktop\Nevala-V_2.0\ConsoleControlSample\obj\Release\ConsoleControlSample.csproj.GenerateResource.Cache
