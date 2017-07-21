@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Input;
@@ -79,6 +81,7 @@ namespace Nevala
         /// The command to expand this item
         /// </summary>
         public ICommand ExpandCommand { get; set; }
+        public ICommand ExpandDirCommand { get; set; }
         /// <summary>
         /// Open on Click
         /// </summary>
@@ -109,6 +112,11 @@ namespace Nevala
         public DirectoryItemViewModel(Document document)
         {
             Document = document;
+        }
+
+        public DirectoryItemViewModel()
+        {
+            this.ExpandDirCommand = new RelayCommand(ExpandDir);
         }
 
         #endregion
@@ -143,6 +151,19 @@ namespace Nevala
             var children = DirectoryStructure.GetDirectoryContents(this.FullPath);
             this.Children = new ObservableCollection<DirectoryItemViewModel>(
                                 children.Select(content => new DirectoryItemViewModel(content.FullPath, content.Type)));
+
+
+        }
+
+        private void ExpandDir()
+        {
+            string navPath = ((MainWindow)System.Windows.Application.Current.MainWindow).Navigator.Text;
+            MessageBox.Show(navPath);
+
+            // Find all children
+            var children = DirectoryStructure.GetDirectoryContents(navPath);
+            this.Children = new ObservableCollection<DirectoryItemViewModel>(
+                                children.Select(content => new DirectoryItemViewModel(content.FullPath, content.Type)));
         }
 
         private void OpenFile()
@@ -153,13 +174,9 @@ namespace Nevala
                 return;
             else if (this.Type == DirectoryItemType.File)
             {
-                
-                    init = new Init(Document);
-                   init.OpenFile(this.FullPath);
-                
-            }
-
-       
+                init = new Init(Document);
+                init.OpenFile(this.FullPath); 
+            }     
         }
     
     }

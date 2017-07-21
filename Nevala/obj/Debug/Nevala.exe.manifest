@@ -85,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+0Q4B2xJciANd1USClv1TxS3AVT4jEO3lWw7oqetO7k=</dsig:DigestValue>
+        <dsig:DigestValue>NdWbTwksZcdOL+ZcReNCmnRiHGTlEBOD/rV5GNW8MgE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -102,14 +102,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nevala.exe" size="258984">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nevala.exe" size="259496">
       <assemblyIdentity name="Nevala" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VLzXylaRMpT1sMzw2X5tSTadMV8aAzT27t7F8q4p6aA=</dsig:DigestValue>
+        <dsig:DigestValue>Wl8ah4rcM1bMW+qGhm22Pg/7zy6pUzgLZDSYXw3gKu8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

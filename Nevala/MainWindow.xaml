@@ -230,10 +230,13 @@
             </DockPanel>
         </DockPanel>
         <GridSplitter Grid.Column="1" Grid.Row="2" Grid.RowSpan="3" Width="5" HorizontalAlignment="Stretch"/>
-        <TextBox Name="Navigator" Grid.Column="2" Grid.Row="1" Text="{Binding FullPath, Mode=TwoWay}" Margin="0,2,2,1" >
+        <TextBox Name="Navigator" Grid.Column="2" Grid.Row="1" Text="{Binding ExpandDirCommand, Mode=TwoWay}" Margin="0,2,2,1" >
             <TextBox.DataContext>
-                <my:DirectoryItem/>
+                <my:DirectoryItemViewModel/>
             </TextBox.DataContext>
+            <TextBox.InputBindings>
+                <KeyBinding Gesture="Enter" Command="{Binding ExpandDirCommand}" />
+            </TextBox.InputBindings>
         </TextBox>
         <TabControl Grid.Column="2" Grid.Row="2" TabStripPlacement="Bottom">
             <TabItem Header="File Explorer">
