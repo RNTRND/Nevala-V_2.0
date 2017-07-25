@@ -28,6 +28,7 @@ namespace Nevala
             #region IPython Shell
             ConsoleControlSample.FormConsoleControlSample ipythonConsole = new ConsoleControlSample.FormConsoleControlSample("ipython",null);
             ipythonConsole.TopLevel = false;
+            
             ipythonConsole.Width = 550;
             ipythonConsole.Height = 300;
 
