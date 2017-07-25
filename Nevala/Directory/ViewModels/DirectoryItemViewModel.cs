@@ -122,7 +122,6 @@ namespace Nevala
             // Set path and type
             this.FullPath = fullPath;
             this.Type = type;
-
             // Setup the children as needed
             this.ClearChildren();
         }
@@ -180,7 +179,7 @@ namespace Nevala
             // Find all children
             var children = DirectoryStructure.GetDirectoryContents(navPath);
             this.Children = new ObservableCollection<DirectoryItemViewModel>(
-                                children.Select(content => new DirectoryItemViewModel(navPath, DirectoryItemType.Folder)));
+                                children.Select(dir => new DirectoryItemViewModel(navPath, DirectoryItemType.Folder)));
         }
 
         private void OpenFile()
