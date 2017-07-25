@@ -29,12 +29,18 @@ namespace Nevala
             ConsoleControlSample.FormConsoleControlSample ipythonConsole = new ConsoleControlSample.FormConsoleControlSample("ipython",null);
             ipythonConsole.TopLevel = false;
             
-            ipythonConsole.Width = 550;
-            ipythonConsole.Height = 300;
-
+            
             System.Windows.Forms.Panel ipyPanel = new System.Windows.Forms.Panel();
             ihost.Child = ipyPanel;
+            //ipyPanel.AutoSize = true;
+            //ipythonConsole.Height = (int)ihost.ActualHeight;
+            //ipythonConsole.Width = (int)ihost.ActualWidth;
+            //ipythonConsole.Size = ipyPanel.Size;
+
             ipyPanel.Controls.Add(ipythonConsole);
+            ipythonConsole.Width = (int)ihost.Width;
+            ipythonConsole.Height = 340;
+            ipythonConsole.ScrollControlIntoView(ipythonConsole);
             ipythonConsole.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             ipythonConsole.Show();
             #endregion

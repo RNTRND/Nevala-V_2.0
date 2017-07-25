@@ -61,6 +61,24 @@ namespace Nevala
             }
         }
 
+        public bool IsExpandedDir
+        {
+            get
+            {
+                return this.Children?.Count(f => f != null) > 0;
+            }
+            set
+            {
+                // If the UI tells us to expand...
+                if (value == true)
+                    // Find all children
+                    ExpandDir();
+                // If the UI tells us to close
+                else
+                    this.ClearChildren();
+            }
+        }
+
         #endregion
 
         #region Private Properties
@@ -161,7 +179,6 @@ namespace Nevala
 
             // Find all children
             var children = DirectoryStructure.GetDirectoryContents(navPath);
-
             this.Children = new ObservableCollection<DirectoryItemViewModel>(
                                 children.Select(content => new DirectoryItemViewModel(navPath, DirectoryItemType.Folder)));
         }
